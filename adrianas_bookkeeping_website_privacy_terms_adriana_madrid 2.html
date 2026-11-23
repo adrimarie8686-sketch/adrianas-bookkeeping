@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Adriana’s Bookkeeping provides professional bookkeeping, payroll support, QuickBooks services and financial reporting for businesses in Bakersfield and virtually nationwide.">
+<title>Adriana’s Bookkeeping | Professional Numbers. Personal Service.</title>
+<style>
+:root{
+  --red:#217346; --red-dark:#174f32; --red-soft:#f8e2e8;
+  --gold:#d98fa5; --gold-light:#efc6d2; --ivory:#fff7f8;
+  --paper:#fffdfd; --ink:#26342c; --muted:#68736c; --line:#ead6dc;
+  --shadow:0 16px 40px rgba(65,31,28,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--red-dark);color:#fff;font-size:.88rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+header{background:rgba(255,253,249,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
+.nav{min-height:82px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:18px 0}
+.brand{display:flex;align-items:center;justify-content:center;gap:14px;text-decoration:none;text-align:center}
+.monogram{width:54px;height:54px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--red);font-family:Georgia,serif;font-size:1.25rem;font-style:italic;box-shadow:inset 0 0 0 3px var(--ivory)}
+.brand strong{display:block;font:600 2.35rem 'Palatino Linotype','Book Antiqua',Palatino,serif;letter-spacing:.025em;line-height:1.05;color:var(--red-dark);text-align:center}
+.brand small{display:block;letter-spacing:.24em;font-size:.78rem;font-weight:700;text-align:center;margin-top:4px}
+nav{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:.88rem;font-weight:700;color:#493d3c}
+nav a:hover{color:var(--red)}
+.btn{display:inline-flex;justify-content:center;align-items:center;background:var(--red);color:#fff;text-decoration:none;border:1px solid var(--red);padding:13px 20px;border-radius:5px;font-weight:700;letter-spacing:.02em;transition:.2s}
+.btn:hover{background:var(--red-dark);transform:translateY(-1px)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#26342c}
+.btn.outline{background:transparent;color:var(--red)}
+.hero{padding:82px 0 76px;background:radial-gradient(ellipse at 85% 20%,#f7dce5 0,transparent 36%),linear-gradient(120deg,#fffdfd 0%,#edf5ef 58%,#f8e6eb 100%);border-bottom:5px solid var(--gold-light)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:.78rem}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif}
+h1{font-size:clamp(2.9rem,7vw,5.4rem);line-height:1.04;margin:15px 0;color:var(--red-dark);font-weight:500;text-align:center;font-family:'Palatino Linotype','Book Antiqua',Palatino,serif}
+h1 span{display:block;color:var(--ink);font:700 .36em Arial,sans-serif;letter-spacing:.24em;margin-top:15px;text-align:center}
+.hero p{font-size:1.12rem;color:#554947;max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-panel{background:var(--paper);border:1px solid var(--gold-light);padding:30px;border-radius:12px;box-shadow:var(--shadow);position:relative}
+.hero-panel:before{content:"";position:absolute;inset:9px;border:1px solid #eadfcf;border-radius:8px;pointer-events:none}
+.hero-panel h2{font-size:1.55rem;color:var(--red);margin:8px 0}
+.hero-panel ul{padding-left:20px;margin:14px 0 0}
+.hero-panel li{margin:8px 0}
+.trust{background:var(--red);color:#fff;padding:18px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;font-weight:700;font-size:.95rem}
+.trust-grid span{padding:4px 10px;border-right:1px solid rgba(255,255,255,.35)}
+.trust-grid span:last-child{border:0}
+section{padding:76px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 38px}
+.section-head h2{font-size:clamp(2rem,4vw,3rem);color:var(--red-dark);margin:8px 0}
+.section-head p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.about-card{background:var(--red-soft);border-left:5px solid var(--gold);padding:30px;border-radius:8px}
+.about-card h3{font-size:1.6rem;color:var(--red-dark);margin-top:0}
+.pill-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.pill{border:1px solid var(--gold-light);background:#fffaf4;border-radius:99px;padding:7px 12px;font-size:.84rem;font-weight:700}
+.services{background:#fffdf9}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;box-shadow:0 7px 20px rgba(65,31,28,.04)}
+.service-number{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--red-soft);color:var(--red);font:700 1rem Georgia,serif;border:1px solid var(--gold-light)}
+.service-card h3{color:var(--red-dark);font-size:1.23rem;line-height:1.25;margin:14px 0}
+.service-card ul{list-style:none;padding:0;margin:0}
+.service-card li{font-size:.91rem;padding:5px 0 5px 18px;position:relative;border-bottom:1px solid #f3eee7}
+.service-card li:last-child{border:0}
+.service-card li:before{content:"♥";position:absolute;left:0;color:var(--gold);font-size:.72rem;top:7px}
+.partnership{background:linear-gradient(135deg,var(--red-dark),var(--red));color:#fff}
+.partnership .section-head h2,.partnership .section-head p{color:#fff}
+.partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.partner{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:20px;border-radius:8px}
+.partner h3{margin:0 0 8px;color:#f7dce5;font-size:1.15rem}
+.partner p{margin:0;color:#fff;font-size:.92rem}
+.pricing{background:#f9edf1}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.price-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.price-card.featured{border:2px solid var(--gold);transform:translateY(-8px)}
+.price-card h3{font-size:1.45rem;color:var(--red-dark);margin:0}
+.price{font:700 2rem Georgia,serif;color:var(--red);margin:14px 0 4px}
+.price small{font:normal .8rem Arial,sans-serif;color:var(--muted)}
+.price-card p{color:var(--muted);font-size:.92rem}
+.price-card ul{padding-left:19px;flex:1}
+.price-card li{margin:7px 0;font-size:.91rem}
+.note{font-size:.84rem;color:var(--muted);margin-top:24px;text-align:center}
+.faq-list{max-width:850px;margin:auto}
+details{background:#fff;border:1px solid var(--line);border-radius:8px;margin:10px 0;padding:17px 20px}
+summary{cursor:pointer;font-weight:700;color:var(--red-dark)}
+details p{color:var(--muted);margin-bottom:0}
+.contact{background:#fffdf9}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}
+.contact-card{background:var(--red-dark);color:#fff;padding:30px;border-radius:10px}
+.contact-card h3{font-size:1.7rem;margin-top:0;color:#f7dce5}
+.contact-card a{color:#fff}
+.contact-form{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px}
+.field{margin:12px 0}
+.field label{display:block;font-size:.87rem;font-weight:700;margin-bottom:5px}
+.field input,.field textarea,.field select{width:100%;padding:12px;border:1px solid #d9cbbd;border-radius:5px;font:inherit;background:#fffdf9}
+.field textarea{min-height:110px}
+footer{background:#173f2b;color:#f8f1f3;padding:34px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer a{color:#f2cbd6}
+footer small{color:#d7c7c0}
+.privacy{background:#f8e9ee;padding:45px 0}
+.privacy h2{color:var(--red-dark);font-size:1.7rem}
+.privacy p{font-size:.88rem;color:#625856}
+
+/* Referral rewards section — styled to match the Refer a Friend inspiration */
+.referral{background:linear-gradient(135deg,#fffdf9 0%,#f8e2e8 52%,#fff7f8 100%);position:relative;overflow:hidden}
+.referral:before{content:"";position:absolute;inset:18px;border:1px solid rgba(217,143,165,.38);pointer-events:none;border-radius:16px}
+.referral .wrap{position:relative;z-index:1}
+.referral-banner{max-width:900px;margin:0 auto 32px;padding:38px 28px;text-align:center;background:rgba(255,253,253,.82);border:1px solid var(--gold-light);border-radius:14px;box-shadow:var(--shadow)}
+.referral-banner .refer-title{font:500 clamp(2rem,5vw,3.4rem) Georgia,'Times New Roman',serif;letter-spacing:.13em;text-transform:uppercase;color:var(--red-dark);margin:0}
+.referral-banner .refer-subtitle{font:italic 1rem Georgia,serif;letter-spacing:.16em;color:#9c6878;margin:9px 0 0}
+.referral-rewards{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:850px;margin:0 auto 30px}
+.referral-reward{background:#fffdfd;border:1px solid var(--gold-light);border-radius:10px;padding:23px;text-align:center}
+.referral-reward strong{display:block;font:500 2rem Georgia,serif;color:var(--red-dark)}
+.referral-reward span{display:block;color:var(--muted);font-size:.92rem;margin-top:5px}
+.referral-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:start;max-width:1000px;margin:auto}
+.referral-info{background:var(--red-dark);color:#fff;border-radius:10px;padding:28px}
+.referral-info h3{color:#f7dce5;font-size:1.5rem;margin:0 0 12px}
+.referral-info li{margin:9px 0}
+.referral-form{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px;box-shadow:var(--shadow)}
+.referral-form h3{color:var(--red-dark);margin:0 0 5px;font-size:1.45rem}
+.referral-form .consent{display:flex;gap:9px;align-items:flex-start;font-size:.84rem;color:var(--muted);margin:15px 0}
+.referral-form .consent input{margin-top:5px;flex:0 0 auto}
+.referral-terms{max-width:1000px;margin:22px auto 0;color:var(--muted);font-size:.82rem}
+@media(max-width:620px){.referral-rewards,.referral-layout{grid-template-columns:1fr}.referral-banner{padding:28px 18px}.referral:before{inset:8px}}
+
+@media(max-width:900px){nav{gap:10px}nav a{font-size:.8rem}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.service-grid,.price-grid{grid-template-columns:repeat(2,1fr)}.partner-grid{grid-template-columns:repeat(2,1fr)}.price-card.featured{transform:none}}
+@media(max-width:620px){.nav{align-items:center;padding:14px 0;flex-direction:column}.brand strong{font-size:2rem}.topbar .wrap{justify-content:center}.hero{padding:55px 0}.service-grid,.price-grid,.partner-grid{grid-template-columns:1fr}.trust-grid{grid-template-columns:repeat(2,1fr)}.trust-grid span:nth-child(2){border-right:0}.trust-grid span:nth-child(3),.trust-grid span:nth-child(4){border-top:1px solid rgba(255,255,255,.3);padding-top:12px}section{padding:55px 0}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>Serving Bakersfield, CA &amp; businesses virtually nationwide</span><span>Cell: <a href="tel:16618293957">(661) 829-3957</a> · Business: <a href="tel:16617480019">(661) 748-0019</a> · <a href="mailto:booksbyadriana@outlook.com">booksbyadriana@outlook.com</a></span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="monogram">A♥B</span><span><strong>Adriana’s</strong><small>BOOKKEEPING</small></span></a>
+<nav aria-label="Main navigation">
+<a href="#about">About</a><a href="#services">Services</a><a href="#partnership">Partnerships</a><a href="#pricing">Packages</a><a href="#referral">Refer a Friend</a><a href="#faq">FAQs</a><a href="#privacy">Privacy &amp; Policies</a><a href="#contact">Contact</a>
+<a class="btn" href="https://calendly.com/booksbyadriana/free-15-minute-bookkeeping-consultation" target="_blank" rel="noopener">Book a Consultation</a>
+</nav></div></header>
+<main id="home">
+<section class="hero"><div class="wrap hero-grid">
+<div><div class="eyebrow">Bookkeeping &amp; Accounting Services</div><h1>Adriana’s <span>BOOKKEEPING</span></h1>
+<p><strong>Professional numbers. Personal service.</strong> Accurate, reliable and professional bookkeeping support that helps business owners stay organized, understand their numbers and make confident decisions.</p>
+<p>From payroll and daily transactions to QuickBooks, reconciliations and financial reporting, Adriana’s Bookkeeping partners with businesses of all sizes and industries.</p>
+<div class="hero-actions"><a class="btn" href="https://calendly.com/booksbyadriana/free-15-minute-bookkeeping-consultation" target="_blank" rel="noopener">Schedule a Consultation</a><a class="btn outline" href="#services">Explore Services</a></div>
+</div>
+<aside class="hero-panel"><div class="eyebrow">Your bookkeeping partner</div><h2>More clarity. Less paperwork.</h2><p>Dependable support designed around your business operations.</p><ul><li>Trained payroll professional</li><li>QuickBooks setup and optimization</li><li>Accurate, organized financial records</li><li>Fixed-fee package options</li><li>Mobile service and virtual support</li></ul></aside>
+</div></section>
+<div class="trust"><div class="wrap trust-grid"><span>♥ Accurate &amp; Organized</span><span>♥ Trained Payroll Professional</span><span>♥ QuickBooks Support</span><span>♥ Mobile &amp; Virtual Service</span></div></div>
+<section id="about"><div class="wrap about-grid">
+<div><div class="eyebrow">Meet Adriana Madrid</div><h2 style="color:var(--red-dark);font-size:2.5rem;margin:8px 0">Your business deserves a reliable bookkeeping partner.</h2><p>Adriana’s Bookkeeping provides professional bookkeeping and accounting support with personal service and clear communication. Whether you are building a new business, managing a growing team or coordinating multiple vendors, we help keep your financial records organized and current.</p><p>Our goal is to build a long-term working relationship, understand your workflow and provide consistent support as your business grows.</p></div>
+<div class="about-card"><h3>Partnership for all businesses</h3><p>We welcome partnerships with businesses across industries, including small and established companies, independent professionals, contractors, retailers, service providers, online businesses, startups and growing organizations.</p><p>Need ongoing monthly support, payroll recordkeeping, a historical cleanup or help getting organized in QuickBooks? Let’s discuss a service plan that fits your operations.</p><div class="pill-row"><span class="pill">All industries</span><span class="pill">Small to growing businesses</span><span class="pill">Local &amp; nationwide virtual</span></div></div>
+</div></section>
+<section class="services" id="services"><div class="wrap">
+<div class="section-head"><div class="eyebrow">What we can take off your plate</div><h2>Bookkeeping &amp; Accounting Services</h2><p>Comprehensive support across six essential areas of your business. Services are tailored to your needs and agreed scope.</p></div>
+<div class="service-grid">
+<article class="service-card"><span class="service-number">01</span><h3>Payroll &amp; Employee Records</h3><ul>
+<li>Full-Cycle Payroll Processing</li><li>Employee Earnings Records</li><li>Employee Timekeeping &amp; Hours Tracking</li><li>Payroll Timecard Recordkeeping</li><li>Hours Worked Verification</li><li>Regular &amp; Overtime Hours Calculations</li><li>Regular &amp; Overtime Pay Calculations</li><li>Gross Pay Calculations</li><li>Payroll Registers &amp; Employee Pay Records</li><li>Quarterly Payroll Recordkeeping</li><li>Year-to-Date Payroll Tracking</li><li>Annual Payroll Summaries</li><li>Payroll Deductions &amp; Withholdings</li><li>FICA &amp; Federal Withholding Calculations</li><li>Social Security Deduction Calculations</li><li>Net Pay Calculations</li><li>Payroll Withholding Table Calculations</li><li>Payroll Footing, Crossfooting &amp; Verification</li>
+</ul></article>
+<article class="service-card"><span class="service-number">02</span><h3>Daily Bookkeeping &amp; Transactions</h3><ul>
+<li>Daily Transaction Recording &amp; Categorization</li><li>Cash Receipts &amp; Cash Payments Recording</li><li>Cash Receipts &amp; Collection Records</li><li>Cash Receipts Journal Maintenance</li><li>Sales Journal &amp; Customer Transaction Recording</li><li>Customer Invoices &amp; Payment Recording</li><li>Transaction Verification &amp; Error Identification</li><li>Overcharge &amp; Undercharge Corrections</li><li>Monthly Receipts &amp; Payments Tracking</li><li>Budget &amp; Actual Transaction Tracking</li>
+</ul></article>
+<article class="service-card"><span class="service-number">03</span><h3>Accounts Receivable &amp; Accounts Payable</h3><ul>
+<li>Accounts Receivable &amp; Invoicing</li><li>Customer Account &amp; Payment Tracking</li><li>Accounts Payable Recordkeeping</li><li>Vendor Invoice Recording</li><li>Vendor Account &amp; Balance Tracking</li><li>Payment &amp; Check Recording</li><li>Vendor Payment Terms Tracking</li><li>Accounts Payable Schedule Maintenance</li><li>Accounts Payable Reconciliation</li><li>Accounts Payable &amp; Bill Pay</li>
+</ul></article>
+<article class="service-card"><span class="service-number">04</span><h3>Purchasing, Inventory &amp; Vendor Records</h3><ul>
+<li>Purchases Journal Maintenance</li><li>Accounts Payable Ledger Maintenance</li><li>Purchase Requisitions &amp; Order Tracking</li><li>Open Order Report Maintenance</li><li>Inventory Balance &amp; Replenishment Tracking</li><li>Inventory &amp; Purchase Recordkeeping</li><li>Receiving &amp; Quantity Verification</li><li>Delivery &amp; Order Discrepancy Documentation</li><li>Price Quotation &amp; Vendor Recordkeeping</li><li>Vendor Price &amp; Terms Comparison</li><li>Purchasing Documentation &amp; Record Organization</li>
+</ul></article>
+<article class="service-card"><span class="service-number">05</span><h3>Ledgers &amp; Financial Records</h3><ul>
+<li>General Ledger Maintenance &amp; Balancing</li><li>Trial Balance Preparation</li><li>Capital Account Tracking</li><li>Bank &amp; Credit Card Reconciliation</li><li>Credit Card Statement Review &amp; Reconciliation</li><li>Cross-Footing, Balancing &amp; Verification of Financial Records</li><li>Records Organization &amp; Filing</li><li>Financial Record Organization</li>
+</ul></article>
+<article class="service-card"><span class="service-number">06</span><h3>QuickBooks &amp; Financial Reporting</h3><ul>
+<li>QuickBooks Setup &amp; Optimization</li><li>Chart of Accounts Organization</li><li>Financial Reporting</li><li>Balance Sheet Reporting</li><li>Profit &amp; Loss (P&amp;L) Reporting</li><li>Historical Bookkeeping Cleanups</li><li>Monthly Financial Record Review</li>
+</ul></article>
+</div></div></section>
+<section class="partnership" id="partnership"><div class="wrap">
+<div class="section-head"><div class="eyebrow" style="color:#f0d6a7">Grow together</div><h2>Let’s build a business partnership.</h2><p>We are open to working relationships with businesses and professionals who serve business owners and want dependable bookkeeping support for their clients or operations.</p></div>
+<div class="partner-grid">
+<div class="partner"><h3>Business owners</h3><p>Ongoing monthly bookkeeping, payroll records and reporting support.</p></div>
+<div class="partner"><h3>CPAs &amp; tax professionals</h3><p>Organized books and records to support a smoother tax-preparation process.</p></div>
+<div class="partner"><h3>Consultants &amp; agencies</h3><p>Referral and collaborative relationships for clients who need bookkeeping.</p></div>
+<div class="partner"><h3>Vendors &amp; service providers</h3><p>Coordinated support for purchasing, payables and business administration.</p></div>
+<div class="partner"><h3>Attorneys &amp; law firms</h3><p>Adriana’s Bookkeeping welcomes connections with attorneys, law firms and legal professionals. We can discuss bookkeeping support for legal practices, including monthly bookkeeping, payroll recordkeeping, accounts payable and receivable, and organized financial records.</p><p style="margin-top:10px"><strong>Interested in connecting?</strong> Contact us to explore a future professional relationship. No formal law-firm partnership is currently in place.</p><p style="margin-top:10px"><a href="mailto:booksbyadriana@outlook.com" style="color:#f7dce5;font-weight:700">Email Adriana’s Bookkeeping</a></p></div>
+<div class="partner"><h3>Real estate professionals</h3><p>We welcome connections with real estate agents, brokers, property managers and real estate offices. Bookkeeping support may include transaction categorization, commission and income tracking, expense records, accounts payable and receivable, and monthly financial reports.</p><p style="margin-top:10px"><strong>Interested in connecting?</strong> Contact us to discuss bookkeeping needs and explore a future professional relationship. No formal real estate partnership is currently in place.</p><p style="margin-top:10px"><a href="mailto:booksbyadriana@outlook.com" style="color:#f7dce5;font-weight:700">Email Adriana’s Bookkeeping</a></p></div>
+<div class="partner"><h3>Medical &amp; doctors’ offices</h3><p>We welcome connections with physicians, medical practices and doctors’ offices. Bookkeeping support may include monthly transaction recording, payroll and employee recordkeeping, vendor bill tracking, accounts payable and receivable, and organized financial reports.</p><p style="margin-top:10px"><strong>Interested in connecting?</strong> Contact us to discuss your office’s bookkeeping needs and explore a future professional relationship. No formal medical-practice partnership is currently in place.</p><p style="margin-top:10px"><a href="mailto:booksbyadriana@outlook.com" style="color:#f7dce5;font-weight:700">Email Adriana’s Bookkeeping</a></p></div>
+</div></div></section>
+<section class="pricing" id="pricing"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Premium service packages</div><h2>Packages built for growing businesses</h2><p>Premium, high-touch starting rates for businesses that value consistent support. Final pricing is confirmed after a discovery call and review of transaction volume, accounts, payroll frequency and complexity.</p></div>
+<div class="price-grid">
+<article class="price-card"><h3>Professional</h3><div class="price">$1,500 <small>/ month starting at</small></div><p>For established businesses that need dependable monthly bookkeeping.</p><ul><li>Monthly transaction recording and categorization</li><li>Bank and credit card reconciliations (up to 4 accounts)</li><li>Accounts payable and receivable tracking</li><li>Monthly Profit &amp; Loss and Balance Sheet</li><li>Monthly review meeting</li><li>Email support</li></ul><a class="btn outline" href="https://calendly.com/booksbyadriana/free-15-minute-bookkeeping-consultation" target="_blank" rel="noopener">Discuss this package</a></article>
+<article class="price-card featured"><div class="eyebrow">Most comprehensive</div><h3>Premium Business</h3><div class="price">$3,500 <small>/ month starting at</small></div><p>For growing companies with more accounts, activity and coordination needs.</p><ul><li>Everything in Professional</li><li>Higher transaction volume and up to 8 accounts</li><li>Vendor and customer balance tracking</li><li>Accounts payable schedule and bill-pay coordination</li><li>Inventory and purchasing recordkeeping</li><li>Payroll recordkeeping support for up to 15 employees</li><li>Priority support and monthly strategy review</li></ul><a class="btn" href="https://calendly.com/booksbyadriana/free-15-minute-bookkeeping-consultation" target="_blank" rel="noopener">Discuss this package</a></article>
+<article class="price-card"><h3>Executive / Multi-Location</h3><div class="price">$6,500+ <small>/ month</small></div><p>For complex operations, multi-location businesses and high-touch support.</p><ul><li>Everything in Premium Business</li><li>Multiple entities or locations</li><li>Advanced reporting and customized schedules</li><li>Expanded payroll recordkeeping coordination</li><li>Inventory, purchasing and vendor reporting</li><li>Dedicated monthly close coordination</li><li>Priority communication and quarterly planning review</li></ul><a class="btn outline" href="https://calendly.com/booksbyadriana/free-15-minute-bookkeeping-consultation" target="_blank" rel="noopener">Request a custom quote</a></article>
+</div>
+<p class="note"><strong>Additional premium projects:</strong> QuickBooks setup and optimization from $1,500 · Historical bookkeeping cleanup from $2,500 · Payroll setup and onboarding from $1,000. Final quotes depend on records, employee count, software and project complexity. Payroll software fees, taxes, filing fees and third-party costs are separate unless stated in a written agreement. Packages are proposed pricing examples, not a binding quote.</p>
+</div></section>
+<section id="faq"><div class="wrap"><div class="section-head"><div class="eyebrow">Helpful answers</div><h2>Frequently Asked Questions</h2><p>Have another question? Contact us and we’ll be happy to discuss your business needs.</p></div>
+<div class="faq-list">
+<details><summary>What types of businesses do you work with?</summary><p>Adriana’s Bookkeeping welcomes businesses across industries, including service providers, contractors, retailers, independent professionals, online businesses, startups and growing companies.</p></details>
+<details><summary>Do you work with clients outside Bakersfield?</summary><p>Yes. We serve clients in Bakersfield, California and offer virtual bookkeeping support to businesses nationwide, subject to service fit and availability.</p></details>
+<details><summary>Do you offer payroll services?</summary><p>Payroll and employee-record services can include payroll processing support, timekeeping records, earnings records, payroll calculations and payroll reporting. The exact scope, software responsibilities, filings and deadlines will be agreed upon in writing before service begins.</p></details>
+<details><summary>Do I need to use QuickBooks?</summary><p>Not necessarily. We can discuss your current accounting software and whether QuickBooks setup or optimization would be appropriate for your business.</p></details>
+<details><summary>How is my monthly price determined?</summary><p>Pricing depends on transaction volume, number of bank and credit card accounts, payroll frequency and employee count, inventory complexity, number of entities or locations, and the level of reporting and communication required.</p></details>
+<details><summary>Can you clean up past-due bookkeeping?</summary><p>Yes. Historical cleanup projects are quoted after reviewing the period involved, the condition of the records and the amount of work needed.</p></details>
+<details><summary>How do we get started?</summary><p>Schedule an introductory consultation. We’ll discuss your business, current bookkeeping process, goals and the support you need. If we’re a good fit, you’ll receive a written proposal and service agreement.</p></details>
+<details><summary>Do you provide tax, audit or legal services?</summary><p>Bookkeeping support and financial reports are not a substitute for tax, audit, legal or investment advice. We can coordinate with your CPA or tax professional. Any regulated services must be provided by appropriately qualified professionals.</p></details>
+</div></div></section>
+<section class="referral" id="referral"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Share the support · Share the rewards</div><h2>Refer a Friend</h2><p>Know a business owner who could use a little more clarity and confidence in their books? Send them our way.</p></div>
+<div class="referral-banner"><p class="refer-title">Refer a Friend</p><p class="refer-subtitle">Bookkeeping for business owners, kings &amp; queens</p><p style="font:700 clamp(1.7rem,4vw,2.5rem) Georgia,serif;color:var(--green);margin:18px 0 0">Give $100. Get $100.</p></div>
+<div class="referral-rewards">
+<div class="referral-reward"><strong>$100 OFF</strong><b>For your friend</b><span>A first-invoice discount when they enroll in an eligible monthly bookkeeping package.</span></div>
+<div class="referral-reward"><strong>$100 CREDIT</strong><b>For you</b><span>An account credit after your referred friend becomes a monthly client and pays their first invoice.</span></div>
+</div>
+<div class="referral-layout">
+<div class="referral-info"><h3>How the referral rewards work</h3><ol><li>Share Adriana’s Bookkeeping with a business owner.</li><li>Ask them to complete the referral form and include your name.</li><li>They schedule a free 15-minute consultation and choose an eligible monthly package.</li><li>After their first monthly invoice is paid, they receive the $100 new-client discount and you receive a $100 account credit.</li></ol><p><strong>Eligible services:</strong> Monthly Bookkeeping, Bookkeeping + Payroll, and customized monthly bookkeeping packages.</p><a class="btn gold" href="https://calendly.com/booksbyadriana/free-15-minute-bookkeeping-consultation" target="_blank" rel="noopener">Book a Free Consultation</a></div>
+<div class="referral-form"><h3>Claim your referral offer</h3><p class="note" style="text-align:left;margin:0 0 16px">Are you new to Adriana’s Bookkeeping? Tell us who referred you.</p>
+<form action="mailto:booksbyadriana@outlook.com" method="post" enctype="text/plain">
+<div class="field"><label for="ref-new-name">Your name</label><input id="ref-new-name" name="New customer name" autocomplete="name" required></div>
+<div class="field"><label for="ref-business">Business name</label><input id="ref-business" name="Business name" autocomplete="organization"></div>
+<div class="field"><label for="ref-email">Your email</label><input id="ref-email" name="Email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="ref-phone">Your phone number (optional)</label><input id="ref-phone" name="Phone" type="tel" autocomplete="tel"></div>
+<div class="field"><label for="referrer-name">Who referred you?</label><input id="referrer-name" name="Referring client name" required></div>
+<div class="field"><label for="ref-service">What service are you interested in?</label><select id="ref-service" name="Interested service"><option>Monthly Bookkeeping</option><option>Bookkeeping + Payroll</option><option>Customized Monthly Package</option><option>Not sure yet — I would like to discuss my needs</option></select></div>
+<label class="consent"><input type="checkbox" name="Contact consent" value="I agree to be contacted about my inquiry" required><span>I agree that Adriana’s Bookkeeping may contact me about my inquiry and referral offer.</span></label>
+<button class="btn" type="submit">Submit Referral Inquiry</button>
+<p class="note" style="text-align:left">This form opens your email application with your details. You must send the email to submit your inquiry. Please do not include passwords, bank logins, Social Security numbers or other sensitive financial information.</p>
+</form></div></div>
+<p class="referral-terms"><strong>Referral offer terms:</strong> The $100 new-customer discount is for first-time clients enrolling in an eligible monthly bookkeeping package and applies to the first monthly invoice. The referring client’s $100 account credit is issued after the referred customer signs a service agreement and pays their first monthly invoice. Referral must be identified before enrollment. Credits are not redeemable for cash and cannot be combined with other offers. One reward per qualifying new customer. Offer subject to confirmation by Adriana’s Bookkeeping.</p>
+</div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Let’s get your books in order</div><h2>Schedule a consultation today.</h2><p>Tell us about your business and the bookkeeping support you’re looking for.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>Adriana’s Bookkeeping</h3><p><strong>Owner</strong><br>Adriana Madrid</p><p><strong>Cell Phone</strong><br><a href="tel:16618293957">(661) 829-3957</a></p><p><strong>Business Phone</strong><br><a href="tel:16617480019">(661) 748-0019</a></p><p><strong>Email</strong><br><a href="mailto:booksbyadriana@outlook.com">booksbyadriana@outlook.com</a></p><p><strong>Location</strong><br>Bakersfield, CA · Virtual nationwide</p><p><strong>Website</strong><br>www.adrianasbookkeeping.com</p><a class="btn gold" href="https://calendly.com/booksbyadriana/free-15-minute-bookkeeping-consultation" target="_blank" rel="noopener">Book with Calendly</a></div>
+<div class="contact-form"><h3 style="margin-top:0;color:var(--red-dark)">Request information</h3>
+<form action="mailto:booksbyadriana@outlook.com" method="post" enctype="text/plain">
+<div class="field"><label for="name">Name</label><input id="name" name="Name" required></div>
+<div class="field"><label for="business">Business name</label><input id="business" name="Business name"></div>
+<div class="field"><label for="email">Email</label><input id="email" name="Email" type="email" required></div>
+<div class="field"><label for="service">What services are you interested in?</label><select id="service" name="Services"><option>Monthly bookkeeping</option><option>Payroll &amp; employee records</option><option>Accounts payable &amp; receivable</option><option>QuickBooks setup or cleanup</option><option>Financial reporting</option><option>Multiple services / custom package</option></select></div>
+<div class="field"><label for="message">Tell us about your needs</label><textarea id="message" name="Message"></textarea></div>
+<button class="btn" type="submit">Send inquiry</button>
+<p class="note" style="text-align:left">This form opens your email application. Please do not send passwords, bank logins, Social Security numbers or other sensitive information through this form.</p>
+</form></div></div></div></section>
+<section class="privacy" id="privacy"><div class="wrap"><div class="eyebrow">Website information</div><h2>Privacy &amp; Business Policies</h2>
+<p><strong>Effective date: November 22, 2026</strong></p>
+<h3>1. Privacy Policy</h3>
+<p>Adriana’s Bookkeeping (“we,” “us,” or “our”) respects your privacy. This policy describes information that may be collected when you visit this website, submit an inquiry, request a consultation, or communicate with us. Depending on how you contact us, information may include your name, business name, email address, phone number, and information about the services you are considering.</p>
+<p>We use inquiry information to respond to questions, arrange consultations, evaluate service requests, provide requested information, and communicate about potential or current services. Please do not submit passwords, bank logins, payment-card numbers, Social Security numbers, tax identification numbers, payroll details about identifiable employees, patient information, or other sensitive personal or financial information through the public website, ordinary email, or the inquiry form.</p>
+<p>We do not sell personal information collected through this website. We may disclose information to service providers who help us with website hosting, email, scheduling, or business operations, and when disclosure is required by law or reasonably necessary to protect rights and security. We aim to limit access to information to people who need it for a legitimate business purpose.</p>
+<p>This website may link to third-party websites or tools, including Calendly. Those services operate under their own privacy notices and terms. We do not control their content, security, or privacy practices. Please review their policies before submitting information to them.</p>
+<p>We retain inquiry information for as long as reasonably needed to respond, manage business records, meet legal obligations, resolve disputes, and enforce agreements. You may email us to ask about access, correction, or deletion of inquiry information. Requests are subject to applicable law and legitimate recordkeeping needs.</p>
+<h3>2. Client Confidentiality &amp; Information Security</h3>
+<p>Client financial and business records are handled under the applicable signed bookkeeping services agreement and any separate confidentiality or data-processing terms. Before sharing records, clients should use an agreed secure document-transfer method and provide only information reasonably necessary for the services. Do not send login credentials by email or through this website. Where available, use authorized accountant access, multi-factor authentication, and secure file-sharing permissions.</p>
+<p>We use reasonable administrative and technical practices appropriate to the information and systems we use. No website, email, cloud service, or electronic transmission can be guaranteed completely secure. Clients should promptly tell us if they believe information shared with us has been sent to the wrong person or compromised.</p>
+<h3>3. Medical Practices &amp; Protected Health Information</h3>
+<p>Our services described on this website are bookkeeping and business recordkeeping services, not medical services. Do not submit patient names, medical records, diagnoses, appointment details, insurance information, or other protected health information (PHI) through this website or ordinary email. We will not receive or handle PHI on behalf of a medical practice unless the scope is separately reviewed, appropriate safeguards are in place, and any legally required written Business Associate Agreement (BAA) is signed before PHI is provided. A listing for medical offices in our professional connections section does not mean we are currently contracted with a medical practice or authorized to access patient information.</p>
+<h3>4. Website Terms of Use</h3>
+<p>By using this website, you agree to use it lawfully and not to interfere with its operation, attempt unauthorized access, upload malicious code, or misuse contact information. Website content is provided for general informational and marketing purposes and may be updated or removed without notice. You may not copy or republish substantial website content or branding for commercial use without our prior written permission, except where permitted by law.</p>
+<p>Submitting an inquiry, booking a consultation, or exchanging messages does not by itself create a bookkeeping-client relationship or require us to accept an engagement. Services begin only after we determine that the engagement is appropriate and both parties complete the required written service agreement and onboarding. The signed agreement controls the scope of work, fees, payment schedule, deadlines, client responsibilities, confidentiality, access to records, termination, and any exclusions.</p>
+<h3>5. Service Scope &amp; No Professional Advice</h3>
+<p>Unless expressly agreed in a signed writing, Adriana’s Bookkeeping provides bookkeeping, payroll recordkeeping, and related administrative financial-record support only. We do not provide legal advice, legal representation, investment advice, audit or assurance opinions, or medical advice. Website information is not a substitute for advice from a qualified attorney, CPA, tax professional, financial adviser, or healthcare professional. Clients remain responsible for reviewing their records, approving transactions and payroll, making business decisions, and meeting filing, tax, employment, and regulatory obligations. Any tax preparation, tax filing, or other regulated service must be separately confirmed in writing before it is offered.</p>
+<h3>6. No Guarantees; Third-Party Services</h3>
+<p>We make reasonable efforts to keep website information useful and current, but we do not guarantee that it is complete, error-free, or available at all times. References to QuickBooks, ADP, Calendly, or other third-party products or providers are for identification or convenience only and do not imply sponsorship, endorsement, certification, or a partnership unless expressly confirmed in a separate written statement. Third-party products and services are subject to their providers’ terms.</p>
+<h3>7. Cookies &amp; Similar Technologies</h3>
+<p>This website may use essential technologies needed for hosting, security, or basic functionality. Third-party links or embedded tools may use their own cookies or similar technologies when you visit or interact with them. We do not describe this website as using advertising or analytics cookies unless and until those tools are actually enabled. You can manage cookies through your browser settings; disabling some cookies may affect third-party features.</p>
+<h3>8. Accessibility</h3>
+<p>We aim to make this website understandable and usable on common devices and are working toward improving accessibility. If you have difficulty accessing any page or need information in another format, please email <a href="mailto:booksbyadriana@outlook.com">booksbyadriana@outlook.com</a> and describe the page and assistance you need.</p>
+<h3>9. Changes &amp; Contact</h3>
+<p>We may revise these website policies as our business, tools, or legal requirements change. The effective date above indicates when this version was prepared. Questions or privacy requests may be sent to <a href="mailto:booksbyadriana@outlook.com">booksbyadriana@outlook.com</a> or by phone at <a href="tel:16617480019">(661) 748-0019</a>.</p>
+<p><strong>Important legal notice:</strong> These are starter website policies drafted for general business communication, not legal advice and not a guarantee of compliance with every law that may apply. They have not been reviewed by an attorney. Before publishing, confirm the actual hosting, email, scheduling, analytics, cookie, payment, and file-sharing tools you use; have a California business/privacy attorney review these policies; and prepare a separate bookkeeping services agreement, confidentiality terms, and (if applicable) a BAA before accepting protected health information.</p>
+</div></section>
+</main>
+<footer><div class="wrap footer-grid"><div><strong style="font:italic 1.5rem Georgia,serif">Adriana’s Bookkeeping</strong><br><small>Professional numbers. Personal service.</small></div><div><a href="#services">Services</a> · <a href="#pricing">Packages</a> · <a href="#referral">Refer a Friend</a> · <a href="#faq">FAQs</a> · <a href="#privacy">Privacy &amp; Policies</a></div><div><small>© 2026 Adriana’s Bookkeeping. All rights reserved.</small></div></div></footer>
+</body></html>
